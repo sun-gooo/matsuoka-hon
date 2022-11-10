@@ -24,28 +24,28 @@
                                   </div>
                                 </div>
                                 <div class="p-2 mx-auto">
-                                  <div class="relative">
+                                  {{-- <div class="relative"> --}}
                                     <label for="email" class="leading-7 text-sm text-gray-600">メールアドレス</label>
                                     <input type="email" id="email" name="email" value="{{ $user->email }}" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                                  </div>
+                                  {{-- </div> --}}
                                 </div>
 
                                 <fieldset class="my-6 p-4 border-solid border-2 border-gray-200">
                                   <legend>
-                                    <input type="checkbox" name="chk_password" id="chk_password" onchange="txtPasswordEnable();">
+                                    <input type="checkbox" name="chk_password" id="chk_password" onchange="txtPasswordEnable();" class="mr-2">
                                     <label for="chk_password">パスワードを更新する</label>
                                   </legend>
                                   <div class="p-2 mx-auto">
                                     <div class="relative">
                                       <label for="password" class="leading-7 text-sm text-gray-600">パスワード</label>
-                                      <input type="password" id="password"  required name="password" disabled class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                      <input type="password" id="password"  required name="password" disabled class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out disabled:text-gray-400 disabled:bg-gray-300 disabled:bg-opacity-40">
                                     </div>
                                   </div>
 
                                   <div class="p-2 mx-auto">
                                     <div class="relative">
                                       <label for="password_confirmation" class="leading-7 text-sm text-gray-600">パスワード確認用</label>
-                                      <input type="password" id="password_confirmation"  required name="password_confirmation" disabled class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                      <input type="password" id="password_confirmation"  required name="password_confirmation" disabled class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out disabled:text-gray-400 disabled:bg-gray-300 disabled:bg-opacity-40">
                                     </div>
                                   </div>
                                   

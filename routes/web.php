@@ -22,6 +22,13 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+
+/* キャンペーン管理 */
+Route::get('/shops', function () {
+    return view('shops');
+})->middleware(['auth'])->name('shops');
+
+
 /* ユーザ管理 */
 Route::get('/users', function () {
     return view('users');
