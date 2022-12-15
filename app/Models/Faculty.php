@@ -5,16 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Promotion extends Model
+class Faculty extends Model
 {
     use HasFactory;
 
-    public function getMyPromotion() {
-        $promotions = Promotion::select('promotions.*')
+    public function getMyFaculty() {
+        $faculties = Faculty::select('faculties.*')
                         ->wherenull('deleted_at')
-                        ->orderby('id','ASC')
+                        ->orderby('sort_num','ASC')
                         ->get();
-        return $promotions;
+        return $faculties;
     }
 
 }

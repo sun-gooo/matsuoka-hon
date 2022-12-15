@@ -26,7 +26,6 @@ class ShopsController extends Controller
 
         for ($i=1; $i<=$promotionCount; $i++) {
             $promotion = Promotion::find($i);
-            // $promotionRadioName = 'promotion' . $i;
             $promotion->visible_flg = $request->boolean('chk_'.$i);
             $promotion->save();
         }

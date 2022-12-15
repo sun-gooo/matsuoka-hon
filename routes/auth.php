@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
+use App\Http\Controllers\BuildingsController;
 use App\Http\Controllers\PromotionsController;
 use App\Http\Controllers\ShopsController;
 use App\Http\Controllers\UsersController;
@@ -57,6 +58,7 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
                 ->name('logout');
 
+    Route::resource('buildings', BuildingsController::class);
     Route::resource('shops', ShopsController::class);
     Route::resource('promotions', PromotionsController::class);
     Route::resource('users', UsersController::class);

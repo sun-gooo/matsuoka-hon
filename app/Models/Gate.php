@@ -5,16 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Promotion extends Model
+class Gate extends Model
 {
     use HasFactory;
 
-    public function getMyPromotion() {
-        $promotions = Promotion::select('promotions.*')
+    public function getMyGate() {
+        $gates = Gate::select('gates.*')
                         ->wherenull('deleted_at')
-                        ->orderby('id','ASC')
+                        ->orderby('sort_num','ASC')
                         ->get();
-        return $promotions;
+        return $gates;
     }
-
 }

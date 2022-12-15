@@ -25,10 +25,10 @@
                                 @foreach ($promotions as $promotion)
                                 <div class="lg:w-1/2 md:w-2/3 mx-auto">
                                     <div class="flex flex-wrap -m-2">
-                                        <div class="w-32 p-2">
+                                        {{-- <div class="p-2">
                                             <label class="leading-7 text-gray-600 text-right">{{ $promotion->promotion_name }}</label>
-                                        </div>
-                                        <div class="w-[calc(100%-8rem)] p-2 ">
+                                        </div> --}}
+                                        <div class=" p-2 ">
                                             <div class="relative">
                                                 <input type="checkbox" id="chk_{{ $promotion->id }}" name="chk_{{ $promotion->id }}" class="mr-2" @if($promotion->visible_flg) checked @endif>
                                                 <label for="chk_{{ $promotion->id }}" class="leading-7 text-gray-600">{{ $promotion->promotion_name }}をトップページに表示する</label>
