@@ -91,9 +91,11 @@
                                             <div class="w-20 mr-2 py-2 text-right">物件種別</div>
                                             <div>
                                                 <select name="sel_property" id="sel_property" class="w-60 bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                                <?php /*
 @foreach($properties as $property)
                                                     <option value="{{ $property{'id'} }}">{{ $property{'property_name'} }}</option>
 @endforeach
+*/ ?>
                                                 </select>
 
                                             </div>
@@ -102,9 +104,11 @@
                                             <div class="w-20 mr-2 py-2 text-right">構造</div>
                                             <div>
                                                 <select name="sel_structure" id="sel_structure" class="w-60 bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+<?php /*
 @foreach($structures as $structure)
                                                     <option value="{{ $structure{'id'} }}">{{ $structure{'structure_name'} }}</option>
 @endforeach
+*/ ?>
                                                 </select>
 
                                             </div>
